@@ -6,8 +6,6 @@ use axum::{
 use serde::{Deserialize, Serialize};
 use std::fmt::{self, write};
 
-use crate::dtos::Response;
-
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ErrorResponse {
     pub status: String,
@@ -135,6 +133,6 @@ impl std::error::Error for HttpError {}
 
 impl IntoResponse for HttpError {
     fn into_response(self) -> Response {
-        self.into_http_response()
+        self.into_http_reponse()
     }
 }
