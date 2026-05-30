@@ -5,9 +5,9 @@ mod error;
 // mod handler;
 // mod mail;
 // mod middleware;
-// mod models;
+mod models;
 // mod routes;
-// mod utils;
+mod utils;
 
 use std::sync::Arc;
 
@@ -18,7 +18,7 @@ use axum::http::{
 use config::Config;
 use db::DBClient;
 use dotenv::dotenv;
-use routes::create_router;
+// use routes::create_router;
 use sqlx::postgres::PgPoolOptions;
 use tower_http::cors::CorsLayer;
 use tracing_subscriber::filter::LevelFilter;
