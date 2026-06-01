@@ -1,1 +1,2 @@
+mod mail;
 mod sendmail;
